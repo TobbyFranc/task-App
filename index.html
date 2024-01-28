@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Task App</title>
+</head>
+<body class="m-0 p-0 box-border">
+
+    <div class="w-[100%] h-[100vh] grid place-content-center" style="background-image: linear-gradient(45deg, #3e3e, #f3f3f3);">
+        <div id="task-app" class="w-[520px] border-transparent rounded-xl bg-slate-50 shadow-md p-8 space-y-3">
+            <h1 class="text-gray-500 text-2xl font-semibold flex">To-Do App</h1>
+            <!-- <img src="./img/undraw_undraw_notebook_ask4_duaf.png" class="img"> -->
+            <div class="shadow flex justify-between items-center bg-gray-500 rounded-md">
+                <input type="text" id="todo-input" class=" todo-input bg-inherit border-none outline-none rounded-md flex-1 px-2 text-slate-50" placeholder="Input your task">
+                <button onclick="addTask()" class=" bg-red-600 rounded-md px-4 py-2 hover:bg-opacity-[80%] text-slate-50 cursor-pointer">Add Task</button>
+            </div>
+
+            <ul class="task-container space-y-1">
+                <!-- <li class="">Javascript<span class="hover:bg-red-600 hover:text-slate-50 hover:shadow-sm">x</span></li> -->
+            </ul>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
